@@ -11,6 +11,8 @@ import { HomeComponent } from './home/home.component';
 import { PeopleListComponent } from './people/people-list/people-list.component';
 import { InitialsPipe } from './pipes/initials.pipe';
 import { RouterModule } from '@angular/router';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,8 @@ imports: [
     IgxRippleModule,
     IgxCardModule,
     IgxAvatarModule,
-    RouterModule
+    RouterModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
   bootstrap: [AppComponent]
