@@ -20,7 +20,7 @@ import { InitialsPipe } from './pipes/initials.pipe';
 ],
 imports: [
     FormsModule,
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     BrowserAnimationsModule,
     AppRoutingModule,
     IgxNavigationDrawerModule,
