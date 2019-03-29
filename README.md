@@ -1,4 +1,5 @@
-[![Build Status](https://travis-ci.org/bkulov/ng-training.svg?branch=master)](https://travis-ci.org/bkulov/ng-training)
+Travis bulid: [![Build Status](https://travis-ci.org/bkulov/ng-training.svg?branch=master)](https://travis-ci.org/bkulov/ng-training)
+Azure build: [![Build Status](https://bkulovig.visualstudio.com/ng-training/_apis/build/status/ng-training-CI?branchName=master)](https://bkulovig.visualstudio.com/ng-training/_build/latest?definitionId=1&branchName=master)
 
 # ng-training
 
