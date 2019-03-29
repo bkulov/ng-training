@@ -1,7 +1,20 @@
-language: node_js
-node_js:
-  - "10.12.0"
-script:
-  - npm run lint
-  - npm run test:prod
-  - npm run build
+pool:
+  vmImage: 'Ubuntu 16.04'
+
+steps:
+- script: npm install
+  displayName: 'Install dependencies'
+  env:
+    AZURE_PIPELINES: "true"
+
+- script: sudo npm install -g @angular/cli
+  displayName: 'Install Angular CLI'
+
+- script: npm run lint
+  displayName: 'Run lint'
+
+- script: npm run build
+  displayName: 'Build source code'
+
+- script: npm run test:prod
+  displayName: 'Run tests'
