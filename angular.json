@@ -131,6 +131,20 @@
               }
             }
           }
+        },
+        "app-shell": {
+          "builder": "@angular-devkit/build-angular:app-shell",
+          "options": {
+            "browserTarget": "ng-training:build",
+            "serverTarget": "ng-training:server",
+            "route": "app-shell-path"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "ng-training:build:production",
+              "serverTarget": "ng-training:server:production"
+            }
+          }
         }
       }
     },
