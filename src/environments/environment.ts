@@ -4,7 +4,9 @@
 
 export const environment = {
   production: false,
-  apiEndpoint: 'http://localhost:6859/api/'
+  apiEndpoint: 'http://localhost:6859/api/',
+  publicKey: "BCWlxM6pScKUfUMrKjlj-deDpBNxld8uQAqZUYNrPRs8TVAo6dkZBcgFNLIo7Sm3TIWEf21r9o_cq7qXpuF3KaY",
+  privateKey: "hRCe1a3U3tn3Rdp7463RIWvrDOmpMKt43vMlU_58XdM"
 };
 
 /*
